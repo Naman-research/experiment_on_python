@@ -12,7 +12,7 @@ Example 2D matrix of size 3×4 (3 rows, 4 columns):
 
 '''
 import sys
-data=sys.stdin.buffer.readline().split()
+data=sys.stdin.buffer.read().split()
 it=iter(data)
 n=int(next(it))
 m=int(next(it))
@@ -23,7 +23,7 @@ for i in range(n):
     matrix.append(list(map(int,data[i*m:m+i*m])))
 print(matrix)
 
-q=sys.stdin.buffer.readline().split()
+q=sys.stdin.buffer.read().split()
 it_1=iter(q)
 n_1=int(next(it_1))
 def resize(l,r):
@@ -44,4 +44,5 @@ for i in range(n_1):
 
 
     
+
 
